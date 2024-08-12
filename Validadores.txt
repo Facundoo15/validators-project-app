@@ -1,0 +1,16 @@
+NotNull -> Validar campo no sea nulo
+NotBlank -> Validar que no sea nulo y que no venga vacío
+NotEmpty -> Validar que una lista no esté vacia
+Min y Max -> Validar números, byte, shorts, int -> Valores minimos y máximos
+Size -> Máximo de caracteres por campo -> min-max=8,16
+Pattern -> Validar Strings en base a expresiones regulares -> regexp
+Email -> Valida especificamente correos electrónicos
+Digits -> Recibir cantidad de dígitos (Decimales) [2,3] = 12.345 -> Parte Integer y Fraccion 
+Past y Future -> Evaluar si una fecha es anterior o posterior a una fech actual -> Past (Fechas anteriores a la fecha actual) -> Future (Fechas futuras a las anteriores a la fecha actual)
+AssertTrue -> Validar booleanos -> Siempre tiene que pasar un verdadero
+AssertFalse -> Validar booleanos -> Siempre tiene que pasar un falso
+CreditCardNumber -> Validar números de tarjetas de crédito o trj bancarias, validar codificaciones!! 
+
+-- Objetos anidados
+
+
