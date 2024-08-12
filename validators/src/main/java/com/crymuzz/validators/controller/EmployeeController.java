@@ -4,6 +4,7 @@ package com.crymuzz.validators.controller;
 import com.crymuzz.validators.entity.Employee;
 import com.crymuzz.validators.entity.dto.EmployeeDTO;
 import com.crymuzz.validators.service.EmployeeService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +24,7 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public ResponseEntity<Employee> saveEmployee(@RequestBody EmployeeDTO employeeDTO) {
+    public ResponseEntity<Employee> saveEmployee(@RequestBody @Valid EmployeeDTO employeeDTO) {
         return new ResponseEntity<>(this.employeeService.saveEmployee(employeeDTO), HttpStatus.CREATED);
     }
 
