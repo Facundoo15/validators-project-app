@@ -13,4 +13,4 @@ CreditCardNumber -> Validar números de tarjetas de crédito o trj bancarias, va
 
 -- Objetos anidados
 
-
+Se validan con @Validator y las anteriores restricciones
