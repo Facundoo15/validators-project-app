@@ -1,7 +1,6 @@
 package com.crymuzz.validators.entity.dto;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+import com.crymuzz.validators.errors.annotation.ValidName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,9 +11,8 @@ import org.springframework.validation.annotation.Validated;
 @NoArgsConstructor
 @Validated
 public class DepartmentDTO {
-    @NotBlank
+
+    @ValidName(message = "El nombre no es correctoo")
     private String name;
-    @NotBlank
-    @Size(min = 3, max = 10)
     private String city;
 }

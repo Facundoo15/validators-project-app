@@ -1,6 +1,6 @@
 package com.crymuzz.validators.entity.dto;
 
-import com.crymuzz.validators.entity.Department;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -32,5 +32,6 @@ public class EmployeeDTO {
     private boolean married;
     @Past
     private LocalDate dateOfBirth;
+    @Valid
     private DepartmentDTO departmentDTO;
 }
